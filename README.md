@@ -21,7 +21,7 @@ Backend: Python, Django, Django ORM
 
 Frontend: HTML5, CSS3, JavaScript, Media Queries
 
-Database: SQLite / MySQL
+Database: SQLite 
 
 Security: CSRF protection, Django Messages Framework
 
