@@ -1,5 +1,5 @@
 
-Restaurant Website – Django Project
+🍽️Restaurant Website – Django Project
 
 This is a fully responsive and dynamic Restaurant Website developed using the Django Framework. The project includes a modern UI, complete menu display system, online table booking feature, and a functional newsletter subscription module. It is designed to give a real-world restaurant experience with secure backend operations.
 
