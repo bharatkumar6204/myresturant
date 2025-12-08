@@ -1,0 +1,25 @@
+{% load static %}
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Navbar</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+<nav>
+    <div class="logo">My Restaurant</div>
+
+    <ul id="menuList">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'menu' %}">Menu</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'booktable' %}">Book Table</a></li>
+    </ul>
+
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+</nav>

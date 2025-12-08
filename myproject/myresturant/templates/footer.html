@@ -1,0 +1,81 @@
+{% load static %}
+
+<!-- ================= FOOTER SECTION ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo + About -->
+        <div class="footer-col">
+            <h2 class="footer-logo">My<span>Restaurant</span></h2>
+            <p>
+                A place where taste meets the myth. We serve fresh and delicious food 
+                made with love and passion.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'booktable' %}">Book Table</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p>📍 Address: Mithapur Patna, Bihar, India</p>
+            <p>📞 Phone: +91 6204354465</p>
+            <p>✉ Email: bbharatkusavansi@gmail.com</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get latest offers & updates</p>
+
+    
+            <form class="newsletter-form" action="{% url 'newsletter' %}" method="post">
+                {% csrf_token %}
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+           {% if messages %}
+        <script>
+        {% for message in messages %}
+            alert("{{ message }}");
+        {% endfor %}
+        </script>
+            {% endif %}
+    
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 MyRestaurant. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+    <!-- JS File -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+
+
+<!--
+    {% if messages %}
+            <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+-->

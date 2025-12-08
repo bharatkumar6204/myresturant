@@ -1,0 +1,325 @@
+
+{% include "header.html" %}
+{% load static %}
+
+
+<!-- ===================== HOME (HERO) SECTION ===================== -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="dp">
+            <h2>
+                Welcome to <span>My Restaurant</span>
+            </h2>
+
+            <p>
+                Experience the taste of freshly cooked, delicious and authentic dishes.  
+                Hum provide karte hain premium dining experience – chahe family dinner ho,
+                couples ka date night ya friends ke saath chill time!
+            </p>
+           </div>
+<!-- bt-->
+            <div class="bt">
+            <a href="{% url 'menu' %}" class="btn-primary" >Explore Menu</a>
+            <a href="{% url 'booktable' %}" class="btn-outline">Book Table</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services">
+        <h2>Our <span>Services</span></h2>
+
+        <div class="services-box">
+            <div class="service-card">
+                <h3>Dine-In</h3>
+                <p>Comfortable seating with amazing ambience and premium customer service.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Home Delivery</h3>
+                <p>Fast & fresh delivery directly to your doorstep within minutes.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Takeaway</h3>
+                <p>Choose your favorite dishes and pick them up anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SPECIAL DISHES ===================== -->
+    <section class="special">
+        <h2>Today's <span>Special</span></h2>
+
+        <div class="special-box">
+
+            <div class="special-card">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80">
+                <h3>Chicken Special Roast</h3>
+                <p>Spicy & juicy roasted chicken with special sauces.</p>
+            </div>
+
+            <div class="special-card">
+                <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=800&q=80">
+                <h3>Veg Cheese Pasta</h3>
+                <p>Creamy & cheesy pasta with Italian herbs.</p>
+            </div>
+
+            <div class="special-card">
+                <img src="{% static 'images/pizza.jpg' %} ">
+                
+                <h3>Special Hot Pizza</h3>
+                <p>Loaded pizza with extra cheese and fresh toppings.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="choose">
+        <h2>Why <span>Choose Us?</span></h2>
+
+        <p class="choose-text" >
+            Hum quality, taste aur service par kabhi compromise nahi karte.  
+            100% hygienic kitchen, fresh ingredients aur premium flavours – yahi hamari identity hai!
+        </p>
+
+        <div class="choose-box">
+
+            <div class="choose-card">
+                <h3>Fresh Ingredients</h3>
+            </div>
+
+            <div class="choose-card">
+                <h3>Hygienic Kitchen</h3>
+            </div>
+
+            <div class="choose-card">
+                <h3>Fast Service</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery">
+        <h2>Our <span>Gallery</span></h2>
+
+        <div class="gallery-box">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80">
+            <img src="{% static 'images/res.1.jpg' %}">
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials">
+        <h2>What Our <span>Customers Say</span></h2>
+
+        <div class="testimonials-box">
+
+            <div class="test-card">
+                <p>"Best food! Ambience awesome, staff very polite."</p>
+                <h4>- Rahul Kumar</h4>
+            </div>
+
+            <div class="test-card">
+                <p>"Pasta aur pizza ki taste bilkul authentic!"</p>
+                <h4>- Priya Singh</h4>
+            </div>
+
+            <div class="test-card">
+                <p>"Family dinner ke liye perfect place. Highly recommended."</p>
+                <h4>- Aman Verma</h4>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- MENU HEADER -->
+    <section class="menu-header">
+        <h1>Our <span>Menu</span></h1>
+        <p>Delicious • Fresh • Hygienic • Affordable</p>
+    </section>
+
+    <!-- MENU FILTER BUTTONS -->
+    <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="starter">Starters</button>
+        <button class="filter-btn" data-category="main">Main Course</button>
+        <button class="filter-btn" data-category="pizza">Pizza</button>
+        <button class="filter-btn" data-category="dessert">Desserts</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+    </div>
+
+    <!-- MENU ITEMS -->
+    <section class="menu-items">
+
+        <!-- Starter -->
+        <div class="menu-card" data-category="starter">
+            <img src="{% static 'images/res.2.jpg' %}" alt="">
+            <h3>Crispy Veg Nuggets</h3>
+            <p>Crunchy & delicious served with dip.</p>
+            <span class="price">₹120</span>
+        </div>
+
+        <div class="menu-card" data-category="starter">
+            <img src="{% static 'images/res.3.jpg' %}" alt="">
+            <h3>Chicken Tikka</h3>
+            <p>Perfectly grilled spicy chicken bites.</p>
+            <span class="price">₹199</span>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-card" data-category="main">
+            <img src="{% static 'images/res.7.jpg' %}" alt="">
+            <h3>Butter Chicken</h3>
+            <p>Creamy, rich & flavorful gravy.</p>
+            <span class="price">₹280</span>
+        </div>
+
+        <div class="menu-card" data-category="main">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=800" alt="">
+            <h3>Veg Biryani</h3>
+            <p>Fresh vegetables cooked with aromatic rice.</p>
+            <span class="price">₹160</span>
+        </div>
+
+        <!-- Pizza -->
+        <div class="menu-card" data-category="pizza">
+            <img src="{% static 'images/res.5.jpg' %}" alt="">
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese pizza with fresh toppings.</p>
+            <span class="price">₹249</span>
+        </div>
+
+        <div class="menu-card" data-category="pizza">
+            <img src="{% static 'images/res.4.jpg' %}" alt="">
+            <h3>Chicken Loaded Pizza</h3>
+            <p>Loaded with cheese & spicy chicken.</p>
+            <span class="price">₹349</span>
+        </div>
+
+        <!-- Dessert -->
+        <div class="menu-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="">
+            <h3>Chocolate Brownie</h3>
+            <p>Hot brownie with chocolate syrup.</p>
+            <span class="price">₹99</span>
+        </div>
+
+        <div class="menu-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800" alt="">
+            <h3>Fruit Ice Cream</h3>
+            <p>Fresh & fruity flavored ice cream.</p>
+            <span class="price">₹70</span>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-card" data-category="drinks">
+            <img src="{% static 'images/res.6.jpg' %}" alt="">
+            <h3>Cold Coffee</h3>
+            <p>Chilled creamy cold coffee.</p>
+            <span class="price">₹120</span>
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1562059390-a761a084768e?w=800" alt="">
+            <h3>Fresh Lemon Soda</h3>
+            <p>Refreshing lemonade with mint.</p>
+            <span class="price">₹60</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="about-section">
+    <div class="about-container">
+
+        <div class="about-img">
+            <img src="{% static 'images/bharat.1.jpg' %}" alt="Restaurant Inside" style="height:500px; width:500px;">
+
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Our Restaurant</span></h2>
+
+            <p>
+                We are one of the finest restaurants in town, known for our delicious food,
+                excellent hospitality, and warm ambiance. We combine fresh ingredients with
+                traditional recipes to create unforgettable flavors for our guests.
+            </p>
+
+            <p>
+                From signature dishes to a cozy environment, we ensure that your dining experience
+                is both delightful and memorable. Our chefs prepare dishes with love and passion.
+            </p>
+
+            <ul class="about-points">
+                <li>✔ Fresh & Healthy Ingredients</li>
+                <li>✔ 5-Star Hospitality</li>
+                <li>✔ Professional & Friendly Staff</li>
+                <li>✔ 100% Customer Satisfaction</li>
+            </ul>
+
+            <a href="{% url 'menu' %}" class="btn">Explore Menu</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= BOOK TABLE SECTION ================= -->
+<section id="book-table" class="book-section">
+    <div class="book-container">
+
+        <h2 class="section-title">Book <span>Your Table</span></h2>
+
+        <form class="book-form" action="{% url 'saveform' %}" method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Phone</label>
+                <input type="tel" name="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>No. of Guests</label>
+                <input type="number"  name="guests" placeholder="Number of persons" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Time</label>
+                <input type="time" name="time"  required>
+            </div>
+
+            <div class="form-group full">
+                <label>Special Request</label>
+                <textarea  name="request"  placeholder="Any special request..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-book">Book Table</button>
+
+        </form>
+    </div>
+</section>
+
+{% include "footer.html" %}
+
+
+
+

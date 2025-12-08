@@ -1,0 +1,50 @@
+{% include "header.html" %}
+{% load static %}
+
+<!-- ================= BOOK TABLE SECTION ================= -->
+<section id="book-table" class="book-section">
+    <div class="book-container">
+
+        <h2 class="section-title">Book <span>Your Table</span></h2>
+
+        <form class="book-form" action="{% url 'saveform' %}" method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Phone</label>
+                <input type="tel" name="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>No. of Guests</label>
+                <input type="number"  name="guests" placeholder="Number of persons" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Time</label>
+                <input type="time" name="time"  required>
+            </div>
+
+            <div class="form-group full">
+                <label>Special Request</label>
+                <textarea  name="request"  placeholder="Any special request..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-book">Book Table</button>
+
+        </form>
+    </div>
+</section>
+
+
+{% include "footer.html" %}

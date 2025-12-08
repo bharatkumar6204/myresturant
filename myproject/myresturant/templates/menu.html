@@ -1,0 +1,99 @@
+{% include "header.html" %}
+{% load static %}
+
+    <!-- MENU HEADER -->
+    <section class="menu-header">
+        <h1>Our <span>Menu</span></h1>
+        <p>Delicious • Fresh • Hygienic • Affordable</p>
+    </section>
+
+    <!-- MENU FILTER BUTTONS -->
+    <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="starter">Starters</button>
+        <button class="filter-btn" data-category="main">Main Course</button>
+        <button class="filter-btn" data-category="pizza">Pizza</button>
+        <button class="filter-btn" data-category="dessert">Desserts</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+    </div>
+
+    <!-- MENU ITEMS -->
+    <section class="menu-items">
+
+        <!-- Starter -->
+        <div class="menu-card" data-category="starter">
+            <img src="{% static 'images/res.2.jpg' %}" alt="">
+            <h3>Crispy Veg Nuggets</h3>
+            <p>Crunchy & delicious served with dip.</p>
+            <span class="price">₹120</span>
+        </div>
+
+        <div class="menu-card" data-category="starter">
+            <img src="{% static 'images/res.3.jpg' %}" alt="">
+            <h3>Chicken Tikka</h3>
+            <p>Perfectly grilled spicy chicken bites.</p>
+            <span class="price">₹199</span>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-card" data-category="main">
+            <img src="{% static 'images/res.7.jpg' %}" alt="">
+            <h3>Butter Chicken</h3>
+            <p>Creamy, rich & flavorful gravy.</p>
+            <span class="price">₹280</span>
+        </div>
+
+        <div class="menu-card" data-category="main">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=800" alt="">
+            <h3>Veg Biryani</h3>
+            <p>Fresh vegetables cooked with aromatic rice.</p>
+            <span class="price">₹160</span>
+        </div>
+
+        <!-- Pizza -->
+        <div class="menu-card" data-category="pizza">
+            <img src="{% static 'images/res.5.jpg' %}" alt="">
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese pizza with fresh toppings.</p>
+            <span class="price">₹249</span>
+        </div>
+
+        <div class="menu-card" data-category="pizza">
+            <img src="{% static 'images/res.4.jpg' %}" alt="">
+            <h3>Chicken Loaded Pizza</h3>
+            <p>Loaded with cheese & spicy chicken.</p>
+            <span class="price">₹349</span>
+        </div>
+
+        <!-- Dessert -->
+        <div class="menu-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="">
+            <h3>Chocolate Brownie</h3>
+            <p>Hot brownie with chocolate syrup.</p>
+            <span class="price">₹99</span>
+        </div>
+
+        <div class="menu-card" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800" alt="">
+            <h3>Fruit Ice Cream</h3>
+            <p>Fresh & fruity flavored ice cream.</p>
+            <span class="price">₹70</span>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-card" data-category="drinks">
+            <img src="{% static 'images/res.6.jpg' %}" alt="">
+            <h3>Cold Coffee</h3>
+            <p>Chilled creamy cold coffee.</p>
+            <span class="price">₹120</span>
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1562059390-a761a084768e?w=800" alt="">
+            <h3>Fresh Lemon Soda</h3>
+            <p>Refreshing lemonade with mint.</p>
+            <span class="price">₹60</span>
+        </div>
+
+    </section>
+{% include "footer.html" %}

@@ -1,0 +1,38 @@
+{% include "header.html" %}
+{% load static %}
+    <!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="about-section">
+    <div class="about-container">
+
+        <div class="about-img">
+            <img src="{% static 'images/bharat.1.jpg' %}" alt="Restaurant Inside" style="height:500px; width:500px;">
+
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Our Restaurant</span></h2>
+
+            <p>
+                We are one of the finest restaurants in town, known for our delicious food,
+                excellent hospitality, and warm ambiance. We combine fresh ingredients with
+                traditional recipes to create unforgettable flavors for our guests.
+            </p>
+
+            <p>
+                From signature dishes to a cozy environment, we ensure that your dining experience
+                is both delightful and memorable. Our chefs prepare dishes with love and passion.
+            </p>
+
+            <ul class="about-points">
+                <li>✔ Fresh & Healthy Ingredients</li>
+                <li>✔ 5-Star Hospitality</li>
+                <li>✔ Professional & Friendly Staff</li>
+                <li>✔ 100% Customer Satisfaction</li>
+            </ul>
+
+            <a href="{% url 'menu' %}" class="btn">Explore Menu</a>
+        </div>
+
+    </div>
+</section>
+{% include "footer.html" %}
