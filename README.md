@@ -17,7 +17,7 @@ Admin Panel Integration – Manage menu items, table bookings, and subscriber li
 
 🛠 Technologies Used
 
-Backend: Python, Django, Django ORM
+Backend: Python, Django
 
 Frontend: HTML5, CSS3, JavaScript, Media Queries
 
