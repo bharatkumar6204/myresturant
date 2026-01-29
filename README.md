@@ -4,7 +4,6 @@
 This is a fully responsive and dynamic Restaurant Website developed using the Django Framework. The project includes a modern UI, complete menu display system, online table booking feature, and a functional newsletter subscription module. It is designed to give a real-world restaurant experience with secure backend operations.
 
 ✨ Features
-
 Dynamic Food Menu – Add, update, and manage food categories and items from Django Admin.
 
 Online Table Booking – Users can reserve tables by entering their details; data is securely saved in the database.
